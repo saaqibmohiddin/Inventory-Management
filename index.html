@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StockWise | Inventory Management</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--text:#172033;--muted:#778198;--primary:#5b5ce2;--border:#e7eaf1;--green:#159b72;--red:#df4d5a;--orange:#d99125}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.app{display:flex;min-height:100vh}
+.sidebar{width:245px;background:#171b35;color:white;padding:25px 16px;flex-shrink:0}
+.brand{font-size:24px;font-weight:800;padding:5px 12px 30px}
+.brand span{color:#a5a6ff}
+.nav{width:100%;display:block;text-align:left;border:0;background:transparent;color:#c3c7df;padding:13px 15px;border-radius:9px;margin:4px 0;font-size:14px}
+.nav.active,.nav:hover{background:#34385e;color:white}
+.nav small{display:block;color:#858baa;margin-top:4px}
+.main{flex:1;min-width:0;padding:28px 32px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;gap:12px}
+h1{font-size:25px;margin:0 0 7px}
+h2{font-size:19px;margin:0 0 18px}
+p{color:var(--muted)}
+.user{background:white;border:1px solid var(--border);padding:10px 14px;border-radius:10px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:22px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:19px;min-width:0}
+.metric-label{color:var(--muted);font-size:13px}
+.metric{font-size:26px;font-weight:800;margin-top:10px}
+.metric-note{font-size:12px;color:var(--muted);margin-top:6px}
+.panel{background:white;border:1px solid var(--border);border-radius:13px;padding:21px;margin-bottom:20px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:17px}
+input,select{background:white;border:1px solid #dfe3ed;border-radius:8px;padding:11px 12px;min-width:0;color:var(--text)}
+input:focus,select:focus{outline:2px solid #c6c7ff;border-color:var(--primary)}
+.toolbar input{flex:1;min-width:180px}
+.btn{border:0;border-radius:8px;padding:11px 16px;background:var(--primary);color:white;font-weight:600}
+.btn:hover{opacity:.9}
+.btn.secondary{background:#eef0ff;color:#4e50c9}
+.btn.danger{background:#fff0f0;color:var(--red)}
+.btn.green{background:var(--green)}
+.btn.small{padding:7px 10px;font-size:12px}
+.formgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.field{display:flex;flex-direction:column;gap:7px;margin-bottom:13px}
+.field label{font-size:13px;font-weight:600}
+.field input,.field select{width:100%}
+table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}
+th,td{padding:13px 11px;border-bottom:1px solid var(--border);text-align:left}
+th{color:var(--muted);font-weight:600;background:#fafbfe}
+.tablewrap{overflow-x:auto}
+.badge{display:inline-block;padding:5px 9px;border-radius:20px;font-size:11px;font-weight:700}
+.normal{background:#e5f7ef;color:#16845e}
+.low{background:#fff4dc;color:#b87912}
+.out{background:#ffebed;color:#d34250}
+.muted{color:var(--muted)}
+.hidden{display:none!important}
+.notice{padding:12px 14px;border-radius:9px;margin:12px 0;font-size:13px;background:#edf0ff;color:#4d50b9}
+.toast{position:fixed;right:20px;bottom:20px;background:#202544;color:white;padding:13px 19px;border-radius:9px;display:none;z-index:5}
+.login{max-width:410px;margin:8vh auto;background:white;padding:30px;border-radius:16px;border:1px solid var(--border)}
+.login h1{margin-bottom:8px}
+.actions{display:flex;gap:7px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.sidebar{width:190px}.main{padding:22px}}
+@media(max-width:620px){.app{display:block}.sidebar{width:100%;padding:12px}.brand{padding:8px 10px 12px}.navlist{display:flex;overflow-x:auto;gap:5px}.nav{width:auto;white-space:nowrap;padding:10px}.nav small{display:none}.main{padding:17px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card{padding:14px}.metric{font-size:21px}.formgrid{grid-template-columns:1fr}.top{align-items:flex-start}.user{font-size:11px}}
+</style>
+</head>
+<body>
+
+<div id="loginPage" class="login">
+  <h1>📦 StockWise</h1>
+  <p>Inventory Management System</p>
+  <div class="field"><label>Username</label><input id="username" value="admin"></div>
+  <div class="field"><label>Password</label><input id="password" type="password" value="admin123"></div>
+  <button class="btn" style="width:100%" onclick="login()">Login</button>
+  <div class="notice">Demo login: admin / admin123</div>
+  <p class="muted" style="font-size:11px">Demo access only. Do not use real passwords.</p>
+</div>
+
+<div id="application" class="app hidden">
+  <aside class="sidebar">
+    <div class="brand">📦 Stock<span>Wise</span></div>
+    <div class="navlist">
+      <button class="nav active" onclick="showPage('dashboard',this)">▦ Dashboard</button>
+      <button class="nav" onclick="showPage('products',this)">▤ Products</button>
+      <button class="nav" onclick="showPage('add',this)">＋ Add Product</button>
+      <button class="nav" onclick="showPage('sales',this)">↗ Sales</button>
+      <button class="nav" onclick="showPage('purchases',this)">↙ Purchases</button>
+      <button class="nav" onclick="showPage('salesHistory',this)">▣ Sales History</button>
+      <button class="nav" onclick="showPage('purchaseHistory',this)">▣ Purchase History</button>
+      <button class="nav" onclick="showPage('stockHistory',this)">↕ Stock History</button>
+      <button class="nav" onclick="showPage('reports',this)">▥ Reports</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="top">
+      <div><h1 id="pageTitle">Dashboard</h1><span class="muted" id="pageSubtitle">Your inventory overview</span></div>
+      <div class="user">Admin &nbsp; <button class="btn small secondary" onclick="logout()">Logout</button></div>
+    </div>
+
+    <section id="dashboard" class="page">
+      <div class="grid" id="metrics"></div>
+      <div class="panel"><h2>Current Inventory</h2><div class="tablewrap" id="dashboardTable"></div></div>
+    </section>
+
+    <section id="products" class="page hidden">
+      <div class="panel">
+        <h2>Product Inventory</h2>
+        <div class="toolbar">
+          <input id="search" placeholder="Search product, category or barcode..." oninput="renderProducts()">
+          <select id="categoryFilter" onchange="renderProducts()"><option>All Categories</option></select>
+          <select id="stockFilter" onchange="renderProducts()">
+            <option>All Stock</option><option>Normal</option><option>Low Stock</option><option>Out of Stock</option>
+          </select>
+        </div>
+        <div id="productTable" class="tablewrap"></div>
+      </div>
+    </section>
+
+    <section id="add" class="page hidden">
+      <div class="panel">
+        <h2 id="productFormTitle">Add New Product</h2>
+        <input type="hidden" id="editId">
+        <div class="formgrid">
+          <div class="field"><label>Product Name *</label><input id="pname" placeholder="Enter product name"></div>
+          <div class="field"><label>Category</label><select id="pcategory"><option>Electronics</option><option>Accessories</option><option>Furniture</option><option>Stationery</option><option>Clothing</option><option>Food</option><option>Other</option><option>General</option></select></div>
+          <div class="field"><label>Barcode (optional)</label><input id="barcode" placeholder="Barcode"></div>
+          <div class="field"><label>Selling Price (₹)</label><input id="selling" type="number" min="0" step="0.01" value="0"></div>
+          <div class="field"><label>Cost Price (₹)</label><input id="cost" type="number" min="0" step="0.01" value="0"></div>
+          <div class="field"><label>Quantity</label><input id="quantity" type="number" min="0" step="1" value="0"></div>
+        </div>
+        <button class="btn" onclick="saveProduct()">Save Product</button>
+        <button class="btn secondary" onclick="clearProductForm()">Clear</button>
+      </div>
+    </section>
+
+    <section id="sales" class="page hidden">
+      <div class="panel">
+        <h2>Record a Sale</h2>
+        <div class="field"><label>Product</label><select id="saleProduct"></select></div>
+        <div class="field"><label>Customer Name</label><input id="customer" placeholder="Customer name"></div>
+        <div class="field"><label>Quantity</label><input id="saleQty" type="number" min="1" value="1"></div>
+        <button class="btn green" onclick="makeSale()">Complete Sale</button>
+        <div id="invoiceResult"></div>
+      </div>
+    </section>
+
+    <section id="purchases" class="page hidden">
+      <div class="panel">
+        <h2>Record a Purchase / Restock</h2>
+        <div class="field"><label>Product</label><select id="purchaseProduct"></select></div>
+        <div class="field"><label>Quantity Purchased</label><input id="purchaseQty" type="number" min="1" value="1"></div>
+        <div class="field"><label>Cost per Unit (₹)</label><input id="purchaseCost" type="number" min="0.01" step="0.01" value="1"></div>
+        <button class="btn green" onclick="makePurchase()">Save Purchase</button>
+      </div>
+    </section>
+
+    <section id="salesHistory" class="page hidden"><div class="panel"><h2>Sales History</h2><div id="salesTable" class="tablewrap"></div></div></section>
+    <section id="purchaseHistory" class="page hidden"><div class="panel"><h2>Purchase History</h2><div id="purchasesTable" class="tablewrap"></div></div></section>
+    <section id="stockHistory" class="page hidden"><div class="panel"><h2>Stock Movement History</h2><div id="stockTable" class="tablewrap"></div></div></section>
+
+    <section id="reports" class="page hidden">
+      <div class="grid" id="reportMetrics"></div>
+      <div class="panel">
+        <h2>Download Reports</h2>
+        <button class="btn" onclick="downloadCSV('products')">Download Inventory CSV</button>
+        <button class="btn secondary" onclick="downloadCSV('sales')">Download Sales CSV</button>
+        <button class="btn secondary" onclick="downloadCSV('purchases')">Download Purchases CSV</button>
+        <p class="muted">CSV files can be opened in Microsoft Excel.</p>
+      </div>
+    </section>
+    <footer>StockWise Inventory Management System · Browser Demo</footer>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+
+<script>
+const KEY="stockwise_demo_v1";
+let data=JSON.parse(localStorage.getItem(KEY)||"null")||{
+ products:[],sales:[],purchases:[],movements:[],nextId:1
+};
+
+function save(){localStorage.setItem(KEY,JSON.stringify(data));renderAll()}
+function money(n){return "₹"+Number(n||0).toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2})}
+function today(){return new Date().toLocaleString("en-IN")}
+function toast(msg){let t=document.getElementById("toast");t.textContent=msg;t.style.display="block";setTimeout(()=>t.style.display="none",2600)}
+function login(){
+ if(document.getElementById("username").value.trim()==="admin"&&document.getElementById("password").value==="admin123"){
+  document.getElementById("loginPage").classList.add("hidden");
+  document.getElementById("application").classList.remove("hidden");
+  renderAll();
+ }else toast("Invalid demo login");
+}
+function logout(){
+ document.getElementById("application").classList.add("hidden");
+ document.getElementById("loginPage").classList.remove("hidden");
+}
+function showPage(id,btn){
+ document.querySelectorAll(".page").forEach(x=>x.classList.add("hidden"));
+ document.getElementById(id).classList.remove("hidden");
+ document.querySelectorAll(".nav").forEach(x=>x.classList.remove("active"));
+ btn.classList.add("active");
+ let names={dashboard:"Dashboard",products:"Product Inventory",add:"Add Product",sales:"Sales",purchases:"Purchases",salesHistory:"Sales History",purchaseHistory:"Purchase History",stockHistory:"Stock History",reports:"Reports"};
+ document.getElementById("pageTitle").textContent=names[id];
+ document.getElementById("pageSubtitle").textContent="StockWise Inventory Management";
+ renderAll();
+}
+function status(q){return q===0?"Out of Stock":q<=5?"Low Stock":"Normal"}
+function badge(q){let s=status(q);return `<span class="badge ${q===0?"out":q<=5?"low":"normal"}">${s}</span>`}
+function table(headers,rows){
+ if(!rows.length)return '<p class="muted">No records available.</p>';
+ return `<table><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody></table>`;
+}
+function recordMovement(p,type,qty,oldQty,newQty){
+ data.movements.unshift({product:p.name,type,qty,oldQty,newQty,date:today()});
+}
+function renderAll(){
+ let p=data.products,stock=p.reduce((a,x)=>a+x.quantity,0);
+ let low=p.filter(x=>x.quantity>0&&x.quantity<=5).length;
+ let out=p.filter(x=>x.quantity===0).length;
+ let value=p.reduce((a,x)=>a+x.selling*x.quantity,0);
+ let totalSales=data.sales.reduce((a,x)=>a+x.total,0);
+ let todaySales=data.sales.filter(x=>x.date.startsWith(new Date().toLocaleDateString("en-IN"))).reduce((a,x)=>a+x.total,0);
+ let profit=data.sales.reduce((a,x)=>a+x.total-x.cost*x.qty,0);
+ document.getElementById("metrics").innerHTML=[
+ ["Total Products",p.length],["Total Stock Units",stock],["Low Stock Items",low],["Out of Stock",out],
+ ["Inventory Value",money(value)],["Today's Sales",money(todaySales)],["Total Sales",money(totalSales)],["Total Profit",money(profit)]
+ ].map(x=>`<div class="card"><div class="metric-label">${x[0]}</div><div class="metric">${x[1]}</div><div class="metric-note">Inventory overview</div></div>`).join("");
+ document.getElementById("dashboardTable").innerHTML=productTable(p.slice(0,8),false);
+ renderProducts();renderSelects();renderHistories();
+ document.getElementById("reportMetrics").innerHTML=[
+ ["Total Sales",money(totalSales)],["Transactions",data.sales.length],["Total Profit",money(profit)],["Inventory Value",money(value)]
+ ].map(x=>`<div class="card"><div class="metric-label">${x[0]}</div><div class="metric">${x[1]}</div></div>`).join("");
+}
+function productTable(rows,actions){
+ return table(["ID","Product","Category","Barcode","Selling Price","Cost Price","Quantity","Stock Status",...(actions?["Actions"]:[])],rows.map(p=>`<tr>
+ <td>${p.id}</td><td><b>${escapeHTML(p.name)}</b></td><td>${escapeHTML(p.category)}</td><td>${escapeHTML(p.barcode||"-")}</td>
+ <td>${money(p.selling)}</td><td>${money(p.cost)}</td><td>${p.quantity}</td><td>${badge(p.quantity)}</td>
+ ${actions?`<td><div class="actions"><button class="btn small secondary" onclick="editProduct(${p.id})">Edit</button><button class="btn small danger" onclick="deleteProduct(${p.id})">Delete</button></div></td>`:""}
+ </tr>`));
+}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function renderProducts(){
+ let q=(document.getElementById("search")?.value||"").toLowerCase();
+ let cat=document.getElementById("categoryFilter")?.value||"All Categories";
+ let filter=document.getElementById("stockFilter")?.value||"All Stock";
+ let cats=[...new Set(data.products.map(p=>p.category))];
+ let select=document.getElementById("categoryFilter");
+ if(select){let old=select.value;select.innerHTML='<option>All Categories</option>'+cats.map(c=>`<option>${escapeHTML(c)}</option>`).join("");select.value=cats.includes(old)?old:"All Categories";cat=select.value}
+ let rows=data.products.filter(p=>(p.name+" "+p.category+" "+p.barcode).toLowerCase().includes(q)&&(cat==="All Categories"||p.category===cat)&&(filter==="All Stock"||status(p.quantity)===filter));
+ document.getElementById("productTable").innerHTML=productTable(rows,true);
+}
+function clearProductForm(){
+ ["editId","pname","barcode"].forEach(id=>document.getElementById(id).value="");
+ document.getElementById("selling").value=0;document.getElementById("cost").value=0;document.getElementById("quantity").value=0;
+ document.getElementById("pcategory").value="General";
+ document.getElementById("productFormTitle").textContent="Add New Product";
+}
+function saveProduct(){
+ let id=Number(document.getElementById("editId").value);
+ let name=document.getElementById("pname").value.trim();
+ let category=document.getElementById("pcategory").value;
+ let barcode=document.getElementById("barcode").value.trim();
+ let selling=Number(document.getElementById("selling").value),cost=Number(document.getElementById("cost").value),qty=Number(document.getElementById("quantity").value);
+ if(!name)return toast("Product name is required.");
+ if(!Number.isFinite(selling)||!Number.isFinite(cost)||selling<0||cost<0||!Number.isInteger(qty)||qty<0)return toast("Enter valid non-negative prices and quantity.");
+ if(barcode&&data.products.some(p=>p.barcode===barcode&&p.id!==id))return toast("Barcode already exists.");
+ if(id){
+  let p=data.products.find(x=>x.id===id);if(!p)return;
+  let old=p.quantity;Object.assign(p,{name,category,barcode,selling,cost,quantity:qty});
+  if(old!==qty)recordMovement(p,qty>old?"UPDATE + STOCK":"UPDATE - STOCK",Math.abs(qty-old),old,qty);
+  toast("Product updated.");
+ }else{
+  let p={id:data.nextId++,name,category,barcode,selling,cost,quantity:qty};
+  data.products.unshift(p);recordMovement(p,"ADD",qty,0,qty);toast("Product added.");
+ }
+ clearProductForm();save();showPage("products",document.querySelectorAll(".nav")[1]);
+}
+function editProduct(id){
+ let p=data.products.find(x=>x.id===id);if(!p)return;
+ document.getElementById("editId").value=p.id;document.getElementById("pname").value=p.name;
+ document.getElementById("pcategory").value=p.category;document.getElementById("barcode").value=p.barcode;
+ document.getElementById("selling").value=p.selling;document.getElementById("cost").value=p.cost;
+ document.getElementById("quantity").value=p.quantity;
+ document.getElementById("productFormTitle").textContent="Update Product";
+ showPage("add",document.querySelectorAll(".nav")[2]);
+}
+function deleteProduct(id){
+ let p=data.products.find(x=>x.id===id);if(!p)return;
+ if(!confirm("Delete "+p.name+"? Historical sales and stock movements will remain."))return;
+ data.products=data.products.filter(x=>x.id!==id);save();toast("Product deleted.");
+}
+function renderSelects(){
+ let available=data.products.filter(p=>p.quantity>0);
+ document.getElementById("saleProduct").innerHTML=available.map(p=>`<option value="${p.id}">${escapeHTML(p.name)} | Stock: ${p.quantity} | ${money(p.selling)}</option>`).join("")||'<option value="">No available stock</option>';
+ document.getElementById("purchaseProduct").innerHTML=data.products.map(p=>`<option value="${p.id}">${escapeHTML(p.name)} | Stock: ${p.quantity}</option>`).join("")||'<option value="">No products</option>';
+}
+function makeSale(){
+ let p=data.products.find(x=>x.id===Number(document.getElementById("saleProduct").value));
+ let qty=Number(document.getElementById("saleQty").value),customer=document.getElementById("customer").value.trim();
+ if(!p)return toast("Add a product with stock first.");
+ if(!Number.isInteger(qty)||qty<=0)return toast("Enter a valid quantity.");
+ if(qty>p.quantity)return toast("Not enough stock. Available: "+p.quantity);
+ let old=p.quantity;p.quantity-=qty;
+ let date=today(),invoice="INV-"+Date.now();
+ let sale={invoice,customer,product:p.name,qty,price:p.selling,cost:p.cost,total:p.selling*qty,date};
+ data.sales.unshift(sale);recordMovement(p,"SALE",qty,old,p.quantity);
+ save();
+ document.getElementById("invoiceResult").innerHTML=`<div class="notice">Sale recorded successfully.<br>Invoice: ${invoice}<br>Customer: ${escapeHTML(customer||"Walk-in")}<br>Total: ${money(sale.total)}<br><br><button class="btn small" onclick='printInvoice(${JSON.stringify(sale).replace(/'/g,"&#39;")})'>Print Invoice</button></div>`;
+ toast("Sale completed.");
+}
+function printInvoice(s){
+ let w=window.open("","_blank");if(!w)return toast("Allow pop-ups to print invoice.");
+ w.document.write(`<h1>MY INVENTORY STORE</h1><p>India</p><hr><h2>Invoice ${escapeHTML(s.invoice)}</h2><p>Customer: ${escapeHTML(s.customer||"Walk-in")}</p><p>Date: ${escapeHTML(s.date)}</p><table border="1" cellpadding="10"><tr><th>Product</th><th>Qty</th><th>Price</th><th>Total</th></tr><tr><td>${escapeHTML(s.product)}</td><td>${s.qty}</td><td>${money(s.price)}</td><td>${money(s.total)}</td></tr></table><h3>Grand Total: ${money(s.total)}</h3><p>Thank you for your purchase!</p>`);
+ w.document.close();w.print();
+}
+function makePurchase(){
+ let p=data.products.find(x=>x.id===Number(document.getElementById("purchaseProduct").value));
+ let qty=Number(document.getElementById("purchaseQty").value),cost=Number(document.getElementById("purchaseCost").value);
+ if(!p)return toast("Add a product first.");
+ if(!Number.isInteger(qty)||qty<=0||!Number.isFinite(cost)||cost<=0)return toast("Enter valid quantity and purchase cost.");
+ let old=p.quantity,newQty=old+qty;
+ p.cost=(old*p.cost+qty*cost)/newQty;p.quantity=newQty;
+ data.purchases.unshift({product:p.name,qty,cost,total:qty*cost,date:today()});
+ recordMovement(p,"PURCHASE",qty,old,newQty);save();toast("Purchase saved.");
+}
+function renderHistories(){
+ document.getElementById("salesTable").innerHTML=table(["Invoice","Customer","Product","Quantity","Selling Price","Subtotal","Date"],data.sales.map(s=>`<tr><td>${s.invoice}</td><td>${escapeHTML(s.customer||"Walk-in")}</td><td>${escapeHTML(s.product)}</td><td>${s.qty}</td><td>${money(s.price)}</td><td>${money(s.total)}</td><td>${s.date}</td></tr>`));
+ document.getElementById("purchasesTable").innerHTML=table(["Product","Quantity","Cost Price","Total Cost","Date"],data.purchases.map(p=>`<tr><td>${escapeHTML(p.product)}</td><td>${p.qty}</td><td>${money(p.cost)}</td><td>${money(p.total)}</td><td>${p.date}</td></tr>`));
+ document.getElementById("stockTable").innerHTML=table(["Product","Movement","Quantity","Previous Stock","New Stock","Date"],data.movements.map(m=>`<tr><td>${escapeHTML(m.product)}</td><td>${escapeHTML(m.type)}</td><td>${m.qty}</td><td>${m.oldQty}</td><td>${m.newQty}</td><td>${m.date}</td></tr>`));
+}
+function downloadCSV(type){
+ let rows,filename;
+ if(type==="products"){
+  rows=[["ID","Product","Category","Barcode","Selling Price","Cost Price","Quantity"],...data.products.map(p=>[p.id,p.name,p.category,p.barcode,p.selling,p.cost,p.quantity])];filename="stockwise_inventory_report.csv";
+ }else if(type==="sales"){
+  rows=[["Invoice","Customer","Product","Quantity","Selling Price","Cost Price","Subtotal","Date"],...data.sales.map(s=>[s.invoice,s.customer,s.product,s.qty,s.price,s.cost,s.total,s.date])];filename="stockwise_sales_report.csv";
+ }else{
+  rows=[["Product","Quantity","Cost Price","Total Cost","Date"],...data.purchases.map(p=>[p.product,p.qty,p.cost,p.total,p.date])];filename="stockwise_purchase_report.csv";
+ }
+ let csv=rows.map(r=>r.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\n");
+ let a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"}));a.download=filename;a.click();URL.revokeObjectURL(a.href);
+}
+renderAll();
+</script>
+</body>
+</html>
