@@ -127,8 +127,7 @@ Mohammed Saaqib Mohiddin
 
 Computer Science & Engineering (Artificial Intelligence)
 
-""
-GitHub:
+GitHub: https://github.com/saaqibmohiddin
 
 View Project Repository (https://github.com/saaqibmohiddin/Inventory-Management)
 
