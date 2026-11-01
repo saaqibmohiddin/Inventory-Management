@@ -55,28 +55,40 @@ openpyxl| Excel export
 
 ---
 
-📁 PROJECT FILES
+📁 PROJECT FILES & ARCHITECTURE
 
-Application
+<p align="center">
+  <img src="https://img.shields.io/badge/PROJECT%20STRUCTURE-INVENTORY%20SYSTEM-087F75?style=for-the-badge&labelColor=10243A" alt="Project Structure">
+</p>🖥️ APPLICATION LAYER
 
-- gui.py — Graphical user interface
-- gui_new.py — Updated GUI application
-- inventory_management.py — Inventory management program
+File| Description
+"gui.py"| Graphical user interface
+"gui_new.py"| Updated GUI application
+"inventory_management.py"| Inventory management program
 
-Database
+🗄️ DATABASE LAYER
 
-- database.py — Database operations
-- inventory.db — SQLite database
-- inventory.json — JSON data file
+File| Description
+"database.py"| Database operations
+"inventory.db"| SQLite database
+"inventory.json"| JSON data file
 
-Export Files
+📊 EXPORT & REPORT FILES
 
-- products.pdf — Product PDF file
-- products.xlsx — Excel product file
+File| Description
+"products.pdf"| Product PDF file
+"products.xlsx"| Excel product file
 
-Documentation
+📄 DOCUMENTATION
 
-- README.md — Project documentation
+File| Description
+"README.md"| Project documentation
+
+---
+
+<p align="center">
+  <strong>APPLICATION · DATABASE · DATA EXPORT</strong>
+</p>
 
 ---
 
