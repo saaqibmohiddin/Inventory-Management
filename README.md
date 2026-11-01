@@ -1,6 +1,6 @@
-"Inventory Management System"
+Inventory Management System
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=STOCKWISE&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF" width="100%" alt="StockWise Inventory Management">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF" width="100%" alt="StockWise Inventory Management">
 </p>
 
 <div align="center">PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL
@@ -17,7 +17,7 @@ Manage Products. Monitor Stock. Simplify Inventory.
 
 🏢 ABOUT THE PROJECT
 
-StockWise is a Python-based desktop Inventory Management System developed using Tkinter and SQLite.
+Inventory Management System is a Python-based desktop Inventory Management System developed using Tkinter and SQLite.
 
 It provides a simple graphical interface to manage product information, including product names, prices, and quantities.
 
@@ -61,24 +61,24 @@ openpyxl| Excel export
 
 Application
 
-- "gui.py" — Graphical user interface
-- "gui_new.py" — Updated GUI application
-- "inventory_management.py" — Inventory management program
+- gui.py — Graphical user interface
+- gui_new.py — Updated GUI application
+- inventory_management.py — Inventory management program
 
 Database
 
-- "database.py" — Database operations
-- "inventory.db" — SQLite database
-- "inventory.json" — JSON data file
+- database.py — Database operations
+- inventory.db — SQLite database
+- inventory.json — JSON data file
 
 Export Files
 
-- "products.pdf" — Product PDF file
-- "products.xlsx" — Excel product file
+- products.pdf — Product PDF file
+- products.xlsx — Excel product file
 
 Documentation
 
-- "README.md" — Project documentation
+- README.md — Project documentation
 
 ---
 
