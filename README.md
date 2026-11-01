@@ -141,7 +141,7 @@ Computer Science & Engineering (Artificial Intelligence)
 
 GitHub: saaqibmohiddin (https://github.com/saaqibmohiddin)
 
-Project Repository: "Inventory Management System" (https://github.com/saaqibmohiddin/Inventory-Management)
+Project Repository: Inventory Management System (https://github.com/saaqibmohiddin/Inventory-Management)
 
 ---
 
