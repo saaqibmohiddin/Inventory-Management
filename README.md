@@ -104,67 +104,59 @@ openpyxl| Excel export
 
 ⚙️ Installation & Setup
 
-Follow these steps to install and run the Inventory Management System on your computer.
+<div align="center"><span style="color:#65D6C5">GETTING STARTED</span>
 
-01 · Clone the Repository
+Set up your environment and launch the Inventory Management System.
 
-Open your terminal and run:
+"5 SIMPLE STEPS" · "PYTHON" · "SQLITE"
+
+</div>---
+
+<span style="color:#65D6C5">01 · CLONE REPOSITORY</span>
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-02 · Navigate to the Project Folder
+<span style="color:#65D6C5">02 · OPEN PROJECT FOLDER</span>
 
 cd Inventory-Management
 
-03 · Install Dependencies
-
-Install the required Python package:
+<span style="color:#65D6C5">03 · INSTALL DEPENDENCIES</span>
 
 pip install openpyxl
 
-04 · Launch the Application
-
-Run the application using:
+<span style="color:#65D6C5">04 · LAUNCH APPLICATION</span>
 
 python gui_new.py
 
-05 · Start Managing Your Inventory
+<span style="color:#65D6C5">05 · START MANAGING PRODUCTS</span>
 
 Once the application opens, you can:
 
-- Add new products
-- View and search products
-- Update product details
-- Delete products
-- Export product data to Excel
+- ➕ Add new products
+- 📋 View all products
+- 🔍 Search product records
+- ✏️ Update product details
+- 🗑️ Delete products
+- 📊 Export product data to Excel
 
 ---
 
-💻 Requirements
+💻 SYSTEM REQUIREMENTS
 
-Requirement| Details
-Language| Python 3
+Component| Technology
+Programming Language| Python 3
 GUI Framework| Tkinter
 Database| SQLite
 Excel Library| openpyxl
-Code Editor| VS Code (recommended)
+Recommended Editor| VS Code
 
-<details>
-<summary>🔧 Troubleshooting</summary>Python is not recognized
+---
 
-Install Python and make sure it is added to your system PATH.
+<div align="center">READY TO MANAGE YOUR INVENTORY?
 
-ModuleNotFoundError: No module named 'openpyxl'
+"INSTALL" → "RUN" → "MANAGE"
 
-Run:
-
-python -m pip install openpyxl
-
-Tkinter is not available
-
-Check that your Python installation includes Tkinter.
-
-</details>
+</div>
 
 ---
 
