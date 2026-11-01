@@ -13,35 +13,35 @@ Inventory Management System
 </p>
 </div>
 
+---
+
 🏢 ABOUT THE PROJECT
 
-Inventory Management System is a Python-based desktop Inventory Management System developed using Tkinter and SQLite.
+<p align="center">
+  <img src="https://img.shields.io/badge/PROJECT-INVENTORY%20MANAGEMENT-087F75?style=for-the-badge&labelColor=10243A" alt="Inventory Management Project">
+</p>📦 Project Overview
 
-It provides a simple graphical interface to manage product information, including product names, prices, and quantities.
+Inventory Management System is a Python-based desktop application developed using Tkinter and SQLite.
 
-The application helps users organize inventory records and perform essential product management operations.
+It provides an easy-to-use graphical interface for managing product information, including product names, prices, and quantities.
 
-📦 INVENTORY MANAGEMENT FEATURES
+🎯 What Does This Application Do?
 
-🟢 Product Management
+- Organizes product information.
+- Helps users add and manage products.
+- Makes searching and updating product records easier.
+- Maintains inventory information.
+- Supports exporting product data to Excel.
 
-- Add new products.
-- View all products.
-- Search for products.
-- Update product information.
-- Delete product records.
+💡 Project Goal
 
-🔵 Stock Management
+To simplify everyday inventory management through a user-friendly desktop application.
 
-- Maintain product information.
-- Manage product prices and quantities.
-- Validate product details.
-- Prevent negative prices and quantities.
+---
 
-🟣 Data & Reports
-
-- Export product information to Excel.
-- Store inventory records using SQLite.
+<p align="center">
+  <strong>PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL</strong>
+</p>
 
 ---
 
