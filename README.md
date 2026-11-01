@@ -92,25 +92,25 @@ Inventory-Management/
 
 1. Install Python
 
-Download Python from:
+   Download Python from:
 
 https://www.python.org/downloads/
 
 2. Clone the Repository
 
-git clone https://github.com/saaqibmohiddin/Inventory-Management.git
+   git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
 3. Open the Project
 
-Open the project folder in Visual Studio Code.
+   Open the project folder in Visual Studio Code.
 
 4. Install Required Library
 
-pip install openpyxl
+   pip install openpyxl
 
 5. Run the Application
 
-python gui_new.py
+   python gui_new.py
 
 ---
 
