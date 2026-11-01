@@ -1,6 +1,6 @@
 Inventory Management System
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF" width="100%" alt="StockWise Inventory Management">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=INVENTORY&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF" width="100%" alt="StockWise Inventory Management">
 </p>
 
 <div align="center">PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL
