@@ -1,52 +1,39 @@
-📦 STOCKWISE
+📦 StockWise
 
 Warehouse & Inventory Management System
 
-Manage Your Warehouse. Track Every Product. Control Your Stock.
+Manage Products. Track Stock. Organize Inventory.
 
-A Python-based desktop application for managing product information, organizing inventory records, and simplifying everyday stock management operations.
+A simple desktop application built with Python to manage product details, prices, and quantities.
 
 ---
 
-🏭 Project Overview
+🏭 About the Project
 
-StockWise is a desktop Inventory Management System developed using Python, Tkinter, and SQLite.
+StockWise is a desktop-based Inventory Management System developed using Python, Tkinter, and SQLite.
 
-It helps users manage product details such as product names, prices, and quantities through a simple graphical user interface.
+It helps users add, view, search, update, and delete product records easily.
 
-The project focuses on making basic inventory operations easier, faster, and more organized.
+✨ Features
 
-⚙️ Features
+- ➕ Add new products
+- 📋 View all products
+- 🔍 Search products
+- ✏️ Update product details
+- 🗑️ Delete products
+- 🧹 Clear input fields
+- ✅ Validate price and quantity
+- 🛡️ Prevent negative values
+- 📊 Export product data to Excel
 
-Feature| Description
-➕ Add Products| Add new products to inventory
-📋 View Products| Display all product records
-🔍 Search Products| Search for specific products
-✏️ Update Products| Edit existing product details
-🗑️ Delete Products| Remove product records
-🧹 Clear Fields| Reset input fields
-✅ Input Validation| Validate price and quantity
-🛡️ Data Protection| Prevent negative prices and quantities
-📊 Excel Export| Export product data to Excel
+🛠️ Technologies Used
 
-🏬 Warehouse Management
+- Python
+- Tkinter
+- SQLite
+- openpyxl
 
-StockWise supports essential inventory activities:
-
-- Product Management – Maintain product names and prices.
-- Quantity Management – Keep product quantity records organized.
-- Inventory Records – View and search stored product information.
-- Data Export – Export product information into Excel.
-
-🛠️ Technology Stack
-
-Technology| Usage
-Python| Application development
-Tkinter| Desktop graphical interface
-SQLite| Database management
-openpyxl| Excel file export
-
-📁 Project Structure
+📂 Project Structure
 
 Inventory-Management/
 │
@@ -62,69 +49,48 @@ Inventory-Management/
 │
 └── README.md
 
-🚀 Installation & Setup
+🚀 How to Run
 
-Step 1 — Install Python
-
-Download Python:
+Step 1: Install Python
 
 https://www.python.org/downloads/
 
-Step 2 — Clone the Repository
+Step 2: Clone the Repository
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-Step 3 — Open the Project
+Step 3: Open the Project Folder
 
-Open the project folder in Visual Studio Code.
+Open it in Visual Studio Code.
 
-Step 4 — Install Dependencies
+Step 4: Install the Required Library
 
 pip install openpyxl
 
-Step 5 — Run the Application
+Step 5: Run the Application
 
 python gui_new.py
 
 🎯 Project Objective
 
-The objective of StockWise is to simplify basic inventory management using a desktop application.
+To make basic inventory management easier through a simple desktop application.
 
-This project demonstrates practical implementation of:
-
-- Python programming
-- GUI development with Tkinter
-- Database operations with SQLite
-- Data validation
-- Excel integration
-
-🔮 Future Enhancements
-
-Possible improvements for future versions:
+🔮 Future Improvements
 
 - Barcode scanning
-- Low-stock notifications
+- Low-stock alerts
 - Supplier management
 - Sales and purchase tracking
-- Inventory analytics
-- User authentication
+- Inventory reports
 
 👨‍💻 Developer
 
 Mohammed Saaqib Mohiddin
 
-B.Tech — Computer Science & Engineering (Artificial Intelligence)
+Computer Science & Engineering (Artificial Intelligence)
 
-GitHub: "@saaqibmohiddin" (https://github.com/saaqibmohiddin)
-
-Project Repository: "Inventory Management System" (https://github.com/saaqibmohiddin/Inventory-Management)
+GitHub: saaqibmohiddin (https://github.com/saaqibmohiddin)
 
 ---
 
-<div align="center">📦 STOCKWISE
-
-Organize Inventory. Monitor Stock. Simplify Warehouse Management.
-
-Built with Python 
-
-</div>
+📦 StockWise — Simple Inventory Management.
