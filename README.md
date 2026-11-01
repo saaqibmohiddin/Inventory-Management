@@ -1,39 +1,53 @@
-📦 StockWise
+📦 INVENTORY MANAGEMENT SYSTEM
 
-Warehouse & Inventory Management System
+PRODUCT MANAGEMENT | STOCK TRACKING | INVENTORY CONTROL
 
-Manage Products. Track Stock. Organize Inventory.
-
-A simple desktop application built with Python to manage product details, prices, and quantities.
+«Manage Products. Monitor Stock. Simplify Inventory.»
 
 ---
 
-🏭 About the Project
+🏢 ABOUT THE PROJECT
 
-StockWise is a desktop-based Inventory Management System developed using Python, Tkinter, and SQLite.
+Inventory Management System is a Python-based desktop application developed using Tkinter and SQLite.
 
-It helps users add, view, search, update, and delete product records easily.
+It helps users manage product information, including product names, prices, and quantities. The application provides a simple interface for maintaining and organizing inventory records.
 
-✨ Features
+📊 CORE FEATURES
 
-- ➕ Add new products
-- 📋 View all products
-- 🔍 Search products
-- ✏️ Update product details
-- 🗑️ Delete products
-- 🧹 Clear input fields
-- ✅ Validate price and quantity
-- 🛡️ Prevent negative values
-- 📊 Export product data to Excel
+📦 Product Management
 
-🛠️ Technologies Used
+- Add new products
+- View all products
+- Search products
+- Update product information
+- Delete products
 
-- Python
-- Tkinter
-- SQLite
-- openpyxl
+📋 Inventory Control
 
-📂 Project Structure
+- Manage product records
+- Maintain product prices and quantities
+- Clear input fields
+- Validate product information
+- Prevent negative prices and quantities
+
+📈 Data Management
+
+- Export product information to Excel
+- Store inventory information using SQLite
+
+---
+
+🛠️ TECHNOLOGY STACK
+
+Technology| Purpose
+Python| Application development
+Tkinter| Desktop user interface
+SQLite| Database management
+openpyxl| Excel file export
+
+---
+
+📁 PROJECT STRUCTURE
 
 Inventory-Management/
 │
@@ -49,41 +63,54 @@ Inventory-Management/
 │
 └── README.md
 
-🚀 How to Run
+---
 
-Step 1: Install Python
+🚀 INSTALLATION & EXECUTION
+
+1. Install Python
+
+Download Python from:
 
 https://www.python.org/downloads/
 
-Step 2: Clone the Repository
+2. Clone the Repository
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-Step 3: Open the Project Folder
+3. Open the Project
 
-Open it in Visual Studio Code.
+Open the project folder in Visual Studio Code.
 
-Step 4: Install the Required Library
+4. Install Required Library
 
 pip install openpyxl
 
-Step 5: Run the Application
+5. Run the Application
 
 python gui_new.py
 
-🎯 Project Objective
+---
 
-To make basic inventory management easier through a simple desktop application.
+🎯 PROJECT OBJECTIVE
 
-🔮 Future Improvements
+The main objective of this project is to simplify product and inventory management through a desktop application.
+
+It demonstrates practical implementation of Python programming, graphical user interfaces, database operations, data validation, and Excel integration.
+
+---
+
+🔮 FUTURE ENHANCEMENTS
 
 - Barcode scanning
-- Low-stock alerts
+- Low-stock notifications
 - Supplier management
 - Sales and purchase tracking
-- Inventory reports
+- Advanced inventory reports
+- User authentication
 
-👨‍💻 Developer
+---
+
+👨‍💻 DEVELOPER
 
 Mohammed Saaqib Mohiddin
 
@@ -91,6 +118,14 @@ Computer Science & Engineering (Artificial Intelligence)
 
 GitHub: saaqibmohiddin (https://github.com/saaqibmohiddin)
 
+Project Repository: "Inventory Management System" (https://github.com/saaqibmohiddin/Inventory-Management)
+
 ---
 
-📦 StockWise — Simple Inventory Management.
+<div align="center">📦 INVENTORY MANAGEMENT SYSTEM 
+
+SMART PRODUCT MANAGEMENT. BETTER INVENTORY CONTROL.
+
+Developed with Python.
+
+</div>
