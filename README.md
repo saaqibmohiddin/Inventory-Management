@@ -186,24 +186,28 @@ To develop a user-friendly desktop application using Python, Tkinter, and SQLite
 
 <table>
 <tr>
-<td width="50%" valign="top">🟢 01 · PRODUCT CONTROL
+<td width="50%" valign="top">🟢  PRODUCT CONTROL
+
 
 Add, view, search, update, and delete product records.
 
 </td>
-<td width="50%" valign="top">🔵 02 · DATA MANAGEMENT
+<td width="50%" valign="top">🔵  DATA MANAGEMENT
+
 
 Store and organize product information using SQLite.
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">🟠 03 · DATA ACCURACY
+<td width="50%" valign="top">🟠  DATA ACCURACY
+
 
 Validate product prices and quantities to prevent invalid entries.
 
 </td>
-<td width="50%" valign="top">🟢 04 · EXCEL EXPORT
+<td width="50%" valign="top">🟢  EXCEL EXPORT
+
 
 Export product information into Excel spreadsheets.
 
