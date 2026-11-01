@@ -1,14 +1,18 @@
-"Inventory Management Banner" (https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=STOCKWISE&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF)
+"Inventory Management System"
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=STOCKWISE&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF" width="100%" alt="StockWise Inventory Management">
+</p>
 
 <div align="center">PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL
 
 Manage Products. Monitor Stock. Simplify Inventory.
 
-"Python" (https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-"Tkinter" (https://img.shields.io/badge/Tkinter-087F75?style=for-the-badge)
-"SQLite" (https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-"openpyxl" (https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Tkinter-087F75?style=for-the-badge" alt="Tkinter">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/openpyxl-217346?style=for-the-badge" alt="openpyxl">
+</p>
 </div>---
 
 🏢 ABOUT THE PROJECT
