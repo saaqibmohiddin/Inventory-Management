@@ -1,8 +1,6 @@
-📦 Inventory Management System
+"Inventory Management Banner" (https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=STOCKWISE&fontSize=55&fontColor=FFFFFF&fontAlignY=38&desc=INVENTORY%20MANAGEMENT%20SYSTEM&descSize=18&descAlignY=60&descColor=DCE7EF)
 
-<div align="center">"StockWise Banner" (assets/stockwise-banner.png)
-
-PRODUCT MANAGEMENT • STOCK TRACKING • INVENTORY CONTROL
+<div align="center">PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL
 
 Manage Products. Monitor Stock. Simplify Inventory.
 
@@ -11,73 +9,74 @@ Manage Products. Monitor Stock. Simplify Inventory.
 "SQLite" (https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 "openpyxl" (https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
-"Desktop Application" (https://img.shields.io/badge/Desktop-Application-243B53?style=flat-square)
-"Inventory" (https://img.shields.io/badge/Inventory-Management-087F75?style=flat-square)
-
 </div>---
 
 🏢 ABOUT THE PROJECT
 
 StockWise is a Python-based desktop Inventory Management System developed using Tkinter and SQLite.
 
-It helps users manage product information, including product names, prices, and quantities through a simple graphical interface.
+It provides a simple graphical interface to manage product information, including product names, prices, and quantities.
 
-The application makes everyday inventory operations easier and more organized.
+The application helps users organize inventory records and perform essential product management operations.
 
-📦 INVENTORY FEATURES
+📦 INVENTORY MANAGEMENT FEATURES
 
-➕ Product Management
+🟢 Product Management
 
-- Add new products
-- View all products
-- Search products
-- Update product information
-- Delete product records
+- Add new products.
+- View all products.
+- Search for products.
+- Update product information.
+- Delete product records.
 
-📊 Stock Management
+🔵 Stock Management
 
-- Maintain product prices and quantities
-- Validate product information
-- Prevent negative prices
-- Prevent negative quantities
-- Clear input fields
+- Maintain product information.
+- Manage product prices and quantities.
+- Validate product details.
+- Prevent negative prices and quantities.
 
-📁 Data Management
+🟣 Data & Reports
 
-- Store inventory information using SQLite
-- Export product information to Excel
+- Export product information to Excel.
+- Store inventory records using SQLite.
 
 ---
 
 🛠️ TECHNOLOGY STACK
 
-Technology| Purpose
-Python| Application development
+Technology| Application
+Python| Core development
 Tkinter| Desktop GUI
-SQLite| Database management
-openpyxl| Excel file export
+SQLite| Database
+openpyxl| Excel export
 
 ---
 
-📂 PROJECT STRUCTURE
+📁 PROJECT FILES
 
-Inventory-Management/
-│
-├── database.py
-├── gui.py
-├── gui_new.py
-├── inventory_management.py
-│
-├── inventory.db
-├── inventory.json
-│
-├── products.pdf
-├── products.xlsx
-│
-├── assets/
-│   └── stockwise-banner.png
-│
-└── README.md
+Application
+
+- "gui.py" — Graphical user interface
+- "gui_new.py" — Updated GUI application
+- "inventory_management.py" — Inventory management program
+
+Database
+
+- "database.py" — Database operations
+- "inventory.db" — SQLite database
+- "inventory.json" — JSON data file
+
+Export Files
+
+- "products.pdf" — Product PDF file
+- "products.xlsx" — Excel product file
+
+Documentation
+
+- "README.md" — Project documentation
+
+---
 
 🚀 INSTALLATION & SETUP
 
@@ -93,9 +92,9 @@ git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
 3. Open the Project
 
-Open the project folder in Visual Studio Code.
+Open the downloaded project folder in Visual Studio Code.
 
-4. Install Required Library
+4. Install the Required Library
 
 pip install openpyxl
 
@@ -107,20 +106,12 @@ python gui_new.py
 
 🎯 PROJECT OBJECTIVE
 
-The objective of StockWise is to simplify product and inventory management through a desktop application.
-
-This project demonstrates:
-
-- Python programming
-- Tkinter GUI development
-- SQLite database operations
-- Input validation
-- Excel file handling
+To simplify inventory management through a desktop application that supports product management, stock information, database operations, and Excel export.
 
 🔮 FUTURE ENHANCEMENTS
 
 - Barcode scanning
-- Low-stock notifications
+- Low-stock alerts
 - Supplier management
 - Sales and purchase tracking
 - Advanced inventory reports
@@ -134,15 +125,16 @@ Mohammed Saaqib Mohiddin
 
 Computer Science & Engineering (Artificial Intelligence)
 
-- GitHub: "saaqibmohiddin" (https://github.com/saaqibmohiddin)
-- Project: "Inventory Management System" (https://github.com/saaqibmohiddin/Inventory-Management)
+""GitHub" (https://img.shields.io/badge/GitHub-saaqibmohiddin-181717?style=for-the-badge&logo=github)" (https://github.com/saaqibmohiddin)
+
+"View Project Repository" (https://github.com/saaqibmohiddin/Inventory-Management)
 
 ---
 
-<div align="center">📦 STOCKWISE
+<div align="center">📦 INVENTORY MANAGEMENT SYSTEM
 
 SMART PRODUCT MANAGEMENT. BETTER INVENTORY CONTROL.
 
-Built with Python 
+Built with Python.
 
 </div>
