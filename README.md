@@ -132,7 +132,7 @@ Launch the application and start managing your products.
 
 <div align="center"><table>
 <tr>
-<td align="center" bgcolor="#142B46"><span style="color:#65D6C5">📦 INVENTORY MANAGEMENT SYSTEM</span>
+<td align="center" bgcolor="#142B46"><span style="color:#65D6C5">📦 INVENTORY MANAGEMENT</span>
 
 <span style="color:#FFFFFF">Manage Products. Organize Data. Save Time.</span>
 
