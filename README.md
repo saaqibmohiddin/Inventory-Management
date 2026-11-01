@@ -19,7 +19,7 @@ Inventory Management System
 
 <p align="center">
   <img src="https://img.shields.io/badge/PROJECT-INVENTORY%20MANAGEMENT-087F75?style=for-the-badge&labelColor=10243A" alt="Inventory Management Project">
-</p>📦 Project Overview
+</p>
 
 Inventory Management System is a Python-based desktop application developed using Tkinter and SQLite.
 
