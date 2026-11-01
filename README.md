@@ -140,6 +140,7 @@ Launch the application and start managing your products.
 </tr>
 </table></div>💡 THE MAIN OBJECTIVE
 
+
 To develop a user-friendly desktop application using Python, Tkinter, and SQLite that helps users manage product information in one place.
 
 ⚡ CORE OBJECTIVES
