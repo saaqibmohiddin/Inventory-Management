@@ -133,10 +133,4 @@ View Project Repository (https://github.com/saaqibmohiddin/Inventory-Management)
 
 ---
 
-<div align="center">📦 INVENTORY MANAGEMENT SYSTEM
-
-SMART PRODUCT MANAGEMENT. BETTER INVENTORY CONTROL.
-
-Built with Python.
-
 </div>
