@@ -55,40 +55,50 @@ openpyxl| Excel export
 
 ---
 
-📁 PROJECT FILES & ARCHITECTURE
+📁 Project Files
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PROJECT%20STRUCTURE-INVENTORY%20SYSTEM-087F75?style=for-the-badge&labelColor=10243A" alt="Project Structure">
-</p>🖥️ APPLICATION LAYER
-
-File| Description
-"gui.py"| Graphical user interface
-"gui_new.py"| Updated GUI application
-"inventory_management.py"| Inventory management program
-
-🗄️ DATABASE LAYER
-
-File| Description
-"database.py"| Database operations
-"inventory.db"| SQLite database
-"inventory.json"| JSON data file
-
-📊 EXPORT & REPORT FILES
-
-File| Description
-"products.pdf"| Product PDF file
-"products.xlsx"| Excel product file
-
-📄 DOCUMENTATION
-
-File| Description
-"README.md"| Project documentation
-
----
-
-<p align="center">
-  <strong>APPLICATION · DATABASE · DATA EXPORT</strong>
-</p>
+<table>
+  <tr>
+    <th>File</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td><code>gui_new.py</code></td>
+    <td>🖥️ Main application interface</td>
+  </tr>
+  <tr>
+    <td><code>gui.py</code></td>
+    <td>🎨 GUI implementation</td>
+  </tr>
+  <tr>
+    <td><code>inventory_management.py</code></td>
+    <td>⚙️ Inventory management operations</td>
+  </tr>
+  <tr>
+    <td><code>database.py</code></td>
+    <td>🗄️ Database operations</td>
+  </tr>
+  <tr>
+    <td><code>inventory.db</code></td>
+    <td>💾 SQLite database</td>
+  </tr>
+  <tr>
+    <td><code>inventory.json</code></td>
+    <td>📄 JSON data file</td>
+  </tr>
+  <tr>
+    <td><code>products.xlsx</code></td>
+    <td>📊 Excel product export</td>
+  </tr>
+  <tr>
+    <td><code>products.pdf</code></td>
+    <td>📑 PDF product report</td>
+  </tr>
+  <tr>
+    <td><code>README.md</code></td>
+    <td>📘 Project documentation</td>
+  </tr>
+</table>
 
 ---
 
