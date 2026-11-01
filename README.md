@@ -1,6 +1,6 @@
 Inventory Management
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=INVENTORY%20MANAGEMENT&fontSize=35&fontColor=FFFFFF&fontAlignY=38&desc=PRODUCT%20MANAGEMENT%20%7C%20STOCK%20CONTROL&descSize=16&descAlignY=60&descColor=DCE7EF" width="100%" alt="Inventory Management System">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=INVENTORY%20MANAGEMENT&fontSize=35&fontColor=FFFFFF&fontAlignY=38&desc=PRODUCT%20MANAGEMENT%20%7C%20STOCK%20CONTROL&descSize=16&descAlignY=60&descColor=DCE7EF" width="100%" alt="Inventory Management">
 </p>
 
 <div align="center">MANAGE PRODUCTS• MONITOR STOCK• SIMPLIFY INVENTORY•
@@ -21,7 +21,7 @@ Inventory Management
   <img src="https://img.shields.io/badge/PROJECT-INVENTORY%20MANAGEMENT-087F75?style=for-the-badge&labelColor=10243A" alt="Inventory Management Project">
 </p>
 
-Inventory Management System is a Python-based desktop application developed using Tkinter and SQLite.
+Inventory Management is a Python-based desktop application developed using Tkinter and SQLite.
 
 It provides an easy-to-use graphical interface for managing product information, including product names, prices, and quantities.
 
@@ -211,5 +211,5 @@ An organized desktop solution for everyday product and inventory record manageme
 
 <p align="center">
   THANK YOU FOR VISITING <br>
-  <sub>Built with Python | Inventory Management System</sub>
+  <sub>Built with Python | Inventory Management</sub>
 </p>
