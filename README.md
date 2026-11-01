@@ -168,29 +168,58 @@ Check that your Python installation includes Tkinter.
 
 ---
 
-🎯 PROJECT OBJECTIVE
+🎯 Project Objective
 
-«Build a smarter and simpler way to manage inventory.»
+<div align="center"><table>
+<tr>
+<td align="center" bgcolor="#142B46"><span style="color:#65D6C5">📦 INVENTORY MANAGEMENT SYSTEM</span>
 
-The objective of this project is to develop a desktop-based Inventory Management System that helps users efficiently manage product records using Python, Tkinter, and SQLite.
+<span style="color:#FFFFFF">Manage Products. Organize Data. Save Time.</span>
 
-⚡ CORE GOALS
+<p><span style="color:#D5E2EF">A desktop application designed to make product management simple, accurate, and efficient.</span></p></td>
+</tr>
+</table></div>💡 THE MAIN OBJECTIVE
 
-PRODUCT CONTROL| DATA MANAGEMENT
-➕ Add Products| 🗄️ Store Product Records
-✏️ Update Details| 🔍 Search Information
-🗑️ Remove Products| 📊 Export to Excel
+To develop a user-friendly desktop application using Python, Tkinter, and SQLite that helps users manage product information in one place.
 
-🛠️ SYSTEM FOCUS
+⚡ CORE OBJECTIVES
 
-- Simplicity: Provide an easy-to-use graphical interface.
-- Accuracy: Validate product prices and quantities.
-- Efficiency: Make product operations quick and convenient.
-- Organization: Maintain product information in an SQLite database.
+<table>
+<tr>
+<td width="50%" valign="top">🟢 01 · PRODUCT CONTROL
 
-✅ PROJECT OUTCOME
+Add, view, search, update, and delete product records.
 
-To create a reliable, user-friendly desktop application that simplifies everyday product and inventory record management.
+</td>
+<td width="50%" valign="top">🔵 02 · DATA MANAGEMENT
+
+Store and organize product information using SQLite.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">🟠 03 · DATA ACCURACY
+
+Validate product prices and quantities to prevent invalid entries.
+
+</td>
+<td width="50%" valign="top">🟢 04 · EXCEL EXPORT
+
+Export product information into Excel spreadsheets.
+
+</td>
+</tr>
+</table>🏁 EXPECTED RESULT
+
+<div align="center">A simple • Reliable • User-friendly application
+
+An organized desktop solution for everyday product and inventory record management.
+
+</div>---
+
+<div align="center">"PYTHON"   "TKINTER"   "SQLITE"   "OPENPYXL"
+
+</div>
 
 ---
 
