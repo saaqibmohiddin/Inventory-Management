@@ -106,19 +106,19 @@ openpyxl| Excel export
 
 <sub>QUICK START · 4 SIMPLE STEPS</sub>
 
-① Clone Repository
+CLONE REPOSITORY
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-② Open Project Folder
+OPEN PROJECT FOLDER
 
 cd Inventory-Management
 
-③ Install Dependency
+INSTALL DEPENDENCY
 
 pip install openpyxl
 
-④ Run Application
+RUN APPLICATION
 
 python gui_new.py
 
