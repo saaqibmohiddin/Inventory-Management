@@ -11,7 +11,7 @@ Inventory Management System
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
   <img src="https://img.shields.io/badge/openpyxl-217346?style=for-the-badge" alt="openpyxl">
 </p>
-</div>---
+</div>
 
 🏢 ABOUT THE PROJECT
 
@@ -144,6 +144,6 @@ To simplify inventory management through a desktop application that supports pro
 </p>
 
 <p align="center">
-  **THANK YOU FOR VISITING!**<br>
+  THANK YOU FOR VISITING <br>
   <sub>Built with Python | Inventory Management System</sub>
 </p>
