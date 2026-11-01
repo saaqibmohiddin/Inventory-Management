@@ -104,49 +104,25 @@ openpyxl| Excel export
 
 ⚙️ Installation & Setup
 
-<div align="center">INITIALIZE YOUR APPLICATION
+<sub>QUICK START · 4 SIMPLE STEPS</sub>
 
-"CLONE" → "INSTALL" → "EXECUTE"
-
-</div>---
-
-🖥️ TERMINAL SETUP
-
-01 — Clone Repository
+① Clone Repository
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-02 — Navigate to Project
+② Open Project Folder
 
 cd Inventory-Management
 
-03 — Install Dependencies
+③ Install Dependency
 
 pip install openpyxl
 
-04 — Execute Application
+④ Run Application
 
 python gui_new.py
 
----
-
-🧩 ENVIRONMENT CONFIGURATION
-
-Component| Purpose
-Python 3| Core programming language
-Tkinter| Graphical user interface
-SQLite| Product data storage
-openpyxl| Excel file export
-
----
-
-<span style="color:#16A085">✓ READY TO LAUNCH</span>
-
-Your Inventory Management System is ready to run. Open the application and start managing your product records.
-
-<div align="center">PYTHON · TKINTER · SQLITE · OPENPYXL
-
-</div>
+«✅ Ready to Go! Launch the application and start managing your products.»
 
 ---
 
