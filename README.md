@@ -127,7 +127,7 @@ To simplify inventory management through a desktop application that supports pro
 <p align="center">
   <img src="https://img.shields.io/badge/DEVELOPED%20BY-MOHAMMED%20SAAQIB%20MOHIDDIN-087F75?style=for-the-badge&labelColor=10243A" alt="Developer">
 </p><h3 align="center"></h3><p align="center">
-  | Computer Science & Engineering<br>
+   Computer Science & Engineering<br>
   Artificial Intelligence
 </p><p align="center">
   <img src="https://img.shields.io/badge/Focus-Python%20Development-3776AB?style=flat-square&logo=python&logoColor=white">
@@ -141,7 +141,7 @@ To simplify inventory management through a desktop application that supports pro
   <a href="https://github.com/saaqibmohiddin/Inventory-Management">
     <img src="https://img.shields.io/badge/Project-View%20Repository-087F75?style=for-the-badge&logo=github&logoColor=white">
   </a>
-</p>---
+</p>
 
 <p align="center">
   **THANK YOU FOR VISITING!**<br>
