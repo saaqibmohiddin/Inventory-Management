@@ -168,18 +168,33 @@ Check that your Python installation includes Tkinter.
 
 ---
 
-🎯 PROJECT OBJECTIVE
+🎯 Project Objective
 
-To simplify inventory management through a desktop application that supports product management, stock information, database operations, and Excel export.
+<div align="center">📦 Inventory Management System
 
-🔮 FUTURE ENHANCEMENTS
+Simplifying product management through a user-friendly desktop application.
 
-- Barcode scanning
-- Low-stock alerts
-- Supplier management
-- Sales and purchase tracking
-- Advanced inventory reports
-- User authentication
+</div>---
+
+💡 What Is the Goal?
+
+The main objective of this project is to develop a simple and efficient desktop-based Inventory Management System using Python, Tkinter, and SQLite.
+
+It aims to help users manage product information, maintain accurate inventory records, and perform essential inventory operations through an easy-to-use graphical interface.
+
+🚀 Key Objectives
+
+No.| Objective
+01| ➕ Add and store product details
+02| 🔍 Search and view products easily
+03| ✏️ Update existing product information
+04| 🗑️ Delete unwanted product records
+05| 🛡️ Validate price and quantity inputs
+06| 📊 Export product data to Excel
+
+🏁 Expected Outcome
+
+A functional desktop application that makes inventory record management easier, faster, and more organized.
 
 ---
 
