@@ -102,29 +102,69 @@ openpyxl| Excel export
 
 ---
 
-🚀 INSTALLATION & SETUP
+⚙️ Installation & Setup
 
-1. Install Python
+Follow these steps to install and run the Inventory Management System on your computer.
 
-Download Python:
+01 · Clone the Repository
 
-https://www.python.org/downloads/
-
-2. Clone the Repository
+Open your terminal and run:
 
 git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
-3. Open the Project
+02 · Navigate to the Project Folder
 
-Open the downloaded project folder in Visual Studio Code.
+cd Inventory-Management
 
-4. Install the Required Library
+03 · Install Dependencies
+
+Install the required Python package:
 
 pip install openpyxl
 
-5. Run the Application
+04 · Launch the Application
+
+Run the application using:
 
 python gui_new.py
+
+05 · Start Managing Your Inventory
+
+Once the application opens, you can:
+
+- Add new products
+- View and search products
+- Update product details
+- Delete products
+- Export product data to Excel
+
+---
+
+💻 Requirements
+
+Requirement| Details
+Language| Python 3
+GUI Framework| Tkinter
+Database| SQLite
+Excel Library| openpyxl
+Code Editor| VS Code (recommended)
+
+<details>
+<summary>🔧 Troubleshooting</summary>Python is not recognized
+
+Install Python and make sure it is added to your system PATH.
+
+ModuleNotFoundError: No module named 'openpyxl'
+
+Run:
+
+python -m pip install openpyxl
+
+Tkinter is not available
+
+Check that your Python installation includes Tkinter.
+
+</details>
 
 ---
 
