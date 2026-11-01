@@ -122,8 +122,9 @@ openpyxl| Excel export
 
     python gui_new.py
 
-✅ Ready to Go ! 
-Launch the application and start managing your products.»
+✅ Ready to Go !
+
+Launch the application and start managing your products.
 
 ---
 
