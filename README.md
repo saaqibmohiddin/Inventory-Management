@@ -3,9 +3,7 @@ Inventory Management System
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F33,50:087F75,100:0B1F33&height=220&section=header&text=INVENTORY%20MANAGEMENT&fontSize=35&fontColor=FFFFFF&fontAlignY=38&desc=PRODUCT%20MANAGEMENT%20%7C%20STOCK%20CONTROL&descSize=16&descAlignY=60&descColor=DCE7EF" width="100%" alt="Inventory Management System">
 </p>
 
-<div align="center">PRODUCT MANAGEMENT · STOCK TRACKING · INVENTORY CONTROL
-
-Manage Products. Monitor Stock. Simplify Inventory.
+<div align="center">MANAGE PRODUCTS. MONITOR STOCK. SIMPLIFY INVENTORY.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
