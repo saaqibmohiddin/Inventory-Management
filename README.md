@@ -1,39 +1,51 @@
-📦 INVENTORY MANAGEMENT SYSTEM
+📦 Inventory Management System
 
-PRODUCT MANAGEMENT | STOCK TRACKING | INVENTORY CONTROL
+<div align="center">"StockWise Banner" (assets/stockwise-banner.png)
 
-«Manage Products. Monitor Stock. Simplify Inventory.»
+PRODUCT MANAGEMENT • STOCK TRACKING • INVENTORY CONTROL
 
----
+Manage Products. Monitor Stock. Simplify Inventory.
+
+"Python" (https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+"Tkinter" (https://img.shields.io/badge/Tkinter-087F75?style=for-the-badge)
+"SQLite" (https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+"openpyxl" (https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+
+"Desktop Application" (https://img.shields.io/badge/Desktop-Application-243B53?style=flat-square)
+"Inventory" (https://img.shields.io/badge/Inventory-Management-087F75?style=flat-square)
+
+</div>---
 
 🏢 ABOUT THE PROJECT
 
-Inventory Management System is a Python-based desktop application developed using Tkinter and SQLite.
+StockWise is a Python-based desktop Inventory Management System developed using Tkinter and SQLite.
 
-It helps users manage product information, including product names, prices, and quantities. The application provides a simple interface for maintaining and organizing inventory records.
+It helps users manage product information, including product names, prices, and quantities through a simple graphical interface.
 
-📊 CORE FEATURES
+The application makes everyday inventory operations easier and more organized.
 
-📦 Product Management
+📦 INVENTORY FEATURES
+
+➕ Product Management
 
 - Add new products
 - View all products
 - Search products
 - Update product information
-- Delete products
+- Delete product records
 
-📋 Inventory Control
+📊 Stock Management
 
-- Manage product records
 - Maintain product prices and quantities
-- Clear input fields
 - Validate product information
-- Prevent negative prices and quantities
+- Prevent negative prices
+- Prevent negative quantities
+- Clear input fields
 
-📈 Data Management
+📁 Data Management
 
-- Export product information to Excel
 - Store inventory information using SQLite
+- Export product information to Excel
 
 ---
 
@@ -41,13 +53,13 @@ It helps users manage product information, including product names, prices, and 
 
 Technology| Purpose
 Python| Application development
-Tkinter| Desktop user interface
+Tkinter| Desktop GUI
 SQLite| Database management
 openpyxl| Excel file export
 
 ---
 
-📁 PROJECT STRUCTURE
+📂 PROJECT STRUCTURE
 
 Inventory-Management/
 │
@@ -62,65 +74,48 @@ Inventory-Management/
 ├── products.pdf
 ├── products.xlsx
 │
+├── assets/
+│   └── stockwise-banner.png
+│
 └── README.md
 
-
-🖥️ Application Files
-
-- gui.py – Graphical user interface
-- gui_new.py – Updated application interface
-- inventory_management.py – Inventory management program
-
-🗄️ Database Files
-
-- database.py – Database operations
-- inventory.db – SQLite database
-- inventory.json – JSON data
-
-📊 Export Files
-
-- products.pdf – Product PDF file
-- products.xlsx – Excel product file
-
-📄 Documentation
-
-- README.md – Project documentation
-
----
-
-🚀 INSTALLATION & EXECUTION
+🚀 INSTALLATION & SETUP
 
 1. Install Python
 
-   Download Python from:
+Download Python:
 
 https://www.python.org/downloads/
 
 2. Clone the Repository
 
-   git clone https://github.com/saaqibmohiddin/Inventory-Management.git
+git clone https://github.com/saaqibmohiddin/Inventory-Management.git
 
 3. Open the Project
 
-   Open the project folder in Visual Studio Code.
+Open the project folder in Visual Studio Code.
 
 4. Install Required Library
 
-   pip install openpyxl
+pip install openpyxl
 
 5. Run the Application
 
-   python gui_new.py
+python gui_new.py
 
 ---
 
 🎯 PROJECT OBJECTIVE
 
-The main objective of this project is to simplify product and inventory management through a desktop application.
+The objective of StockWise is to simplify product and inventory management through a desktop application.
 
-It demonstrates practical implementation of Python programming, graphical user interfaces, database operations, data validation, and Excel integration.
+This project demonstrates:
 
----
+- Python programming
+- Tkinter GUI development
+- SQLite database operations
+- Input validation
+- Excel file handling
 
 🔮 FUTURE ENHANCEMENTS
 
@@ -139,16 +134,15 @@ Mohammed Saaqib Mohiddin
 
 Computer Science & Engineering (Artificial Intelligence)
 
-GitHub: saaqibmohiddin (https://github.com/saaqibmohiddin)
-
-Project Repository: Inventory Management System (https://github.com/saaqibmohiddin/Inventory-Management)
+- GitHub: "saaqibmohiddin" (https://github.com/saaqibmohiddin)
+- Project: "Inventory Management System" (https://github.com/saaqibmohiddin/Inventory-Management)
 
 ---
 
-<div align="center">📦 INVENTORY MANAGEMENT SYSTEM 
+<div align="center">📦 STOCKWISE
 
 SMART PRODUCT MANAGEMENT. BETTER INVENTORY CONTROL.
 
-Developed with Python.
+Built with Python 
 
 </div>
