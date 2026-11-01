@@ -64,16 +64,27 @@ Inventory-Management/
 │
 └── README.md
 
-Main Files
 
-- "database.py" – Database operations
-- "gui.py" – Graphical user interface
-- "gui_new.py" – Updated GUI application
-- "inventory_management.py" – Inventory management logic
-- "inventory.db" – SQLite database
-- "inventory.json" – JSON data file
-- "products.pdf" – Product PDF file
-- "products.xlsx" – Excel product file
+🖥️ Application Files
+
+- gui.py – Graphical user interface
+- gui_new.py – Updated application interface
+- inventory_management.py – Inventory management program
+
+🗄️ Database Files
+
+- database.py – Database operations
+- inventory.db – SQLite database
+- inventory.json – JSON data
+
+📊 Export Files
+
+- products.pdf – Product PDF file
+- products.xlsx – Excel product file
+
+📄 Documentation
+
+- README.md – Project documentation
 
 ---
 
