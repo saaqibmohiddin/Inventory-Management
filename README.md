@@ -126,7 +126,7 @@ To simplify inventory management through a desktop application that supports pro
 
 <p align="center">
   <img src="https://img.shields.io/badge/DEVELOPED%20BY-MOHAMMED%20SAAQIB%20MOHIDDIN-087F75?style=for-the-badge&labelColor=10243A" alt="Developer">
-</p><h3 align="center">Mohammed Saaqib Mohiddin</h3><p align="center">
+</p><h3 align="center"></h3><p align="center">
   | Computer Science & Engineering<br>
   Artificial Intelligence
 </p><p align="center">
