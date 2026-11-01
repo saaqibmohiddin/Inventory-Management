@@ -215,9 +215,9 @@ Export product information into Excel spreadsheets.
 
 An organized desktop solution for everyday product and inventory record management.
 
-</div>---
+</div>
 
-<div align="center">"PYTHON"   "TKINTER"   "SQLITE"   "OPENPYXL"
+<div align="center">PYTHON   TKINTER   SQLITE   OPENPYXL
 
 </div>
 
