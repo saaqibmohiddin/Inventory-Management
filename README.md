@@ -121,16 +121,29 @@ To simplify inventory management through a desktop application that supports pro
 
 ---
 
-👨‍💻 DEVELOPER
 
-Mohammed Saaqib Mohiddin
+👨‍💻 DEVELOPER PROFILE
 
-Computer Science & Engineering (Artificial Intelligence)
+<p align="center">
+  <img src="https://img.shields.io/badge/DEVELOPED%20BY-MOHAMMED%20SAAQIB%20MOHIDDIN-087F75?style=for-the-badge&labelColor=10243A" alt="Developer">
+</p><h3 align="center">Mohammed Saaqib Mohiddin</h3><p align="center">
+  | Computer Science & Engineering<br>
+  Artificial Intelligence
+</p><p align="center">
+  <img src="https://img.shields.io/badge/Focus-Python%20Development-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Project-Inventory%20Management-087F75?style=flat-square">
+</p>🔗 Connect & Explore
 
-GitHub: https://github.com/saaqibmohiddin
+<p align="center">
+  <a href="https://github.com/saaqibmohiddin">
+    <img src="https://img.shields.io/badge/GitHub-Visit%20Profile-10243A?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://github.com/saaqibmohiddin/Inventory-Management">
+    <img src="https://img.shields.io/badge/Project-View%20Repository-087F75?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>---
 
-View Project Repository (https://github.com/saaqibmohiddin/Inventory-Management)
-
----
-
-</div>
+<p align="center">
+  **THANK YOU FOR VISITING!**<br>
+  <sub>Built with Python | Inventory Management System</sub>
+</p>
