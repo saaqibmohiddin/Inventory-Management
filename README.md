@@ -127,9 +127,10 @@ Mohammed Saaqib Mohiddin
 
 Computer Science & Engineering (Artificial Intelligence)
 
-""GitHub" (https://img.shields.io/badge/GitHub-saaqibmohiddin-181717?style=for-the-badge&logo=github)" (https://github.com/saaqibmohiddin)
+""
+GitHub:
 
-"View Project Repository" (https://github.com/saaqibmohiddin/Inventory-Management)
+View Project Repository (https://github.com/saaqibmohiddin/Inventory-Management)
 
 ---
 
