@@ -47,11 +47,11 @@ To simplify everyday inventory management through a user-friendly desktop applic
 
 🛠️ TECHNOLOGY STACK
 
-Technology| Application
-Python| Core development
-Tkinter| Desktop GUI
-SQLite| Database
-openpyxl| Excel export
+Technology | Application
+Python | Core development
+Tkinter | Desktop GUI
+SQLite | Database
+openpyxl | Excel export
 
 ---
 
