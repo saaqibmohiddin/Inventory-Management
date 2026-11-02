@@ -173,7 +173,7 @@ Export product information into Excel spreadsheets.
 
 </td>
 </tr>
-</table>## 🏁 EXPECTED RESULT
+</table>🏁 EXPECTED RESULT
 
 <div align="center">A simple • Reliable • User-friendly application
 
