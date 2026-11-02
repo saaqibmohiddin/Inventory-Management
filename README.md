@@ -198,18 +198,16 @@ An organized desktop solution for everyday product and inventory record manageme
 </p><p align="center">
   <img src="https://img.shields.io/badge/Focus-Python%20Development-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Project-Inventory%20Management-087F75?style=flat-square">
-</p>🔗 Connect & Explore
+</p>
+
+### 🌐 CONNECT WITH ME
 
 <p align="center">
   <a href="https://github.com/saaqibmohiddin">
-    <img src="https://img.shields.io/badge/GitHub-Visit%20Profile-10243A?style=for-the-badge&logo=github&logoColor=white">
+    <img src="https://img.shields.io/badge/VISIT%20MY%20GITHUB-102D42?style=for-the-badge&logo=github&logoColor=62D9C1" />
   </a>
-  <a href="https://github.com/saaqibmohiddin/Inventory-Management">
-    <img src="https://img.shields.io/badge/Project-View%20Repository-087F75?style=for-the-badge&logo=github&logoColor=white">
+  <br/><br/>
+  <a href="https://github.com/saaqibmohiddin">
+    https://github.com/saaqibmohiddin
   </a>
-</p>
-
-<p align="center">
-  THANK YOU FOR VISITING <br>
-  <sub>Built with Python | Inventory Management</sub>
 </p>
