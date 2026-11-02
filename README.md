@@ -189,7 +189,7 @@ An organized desktop solution for everyday product and inventory record manageme
 ---
 
 
-👨‍💻 DEVELOPER PROFILE
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/DEVELOPED%20BY-MOHAMMED%20SAAQIB%20MOHIDDIN-087F75?style=for-the-badge&labelColor=10243A" alt="Developer">
