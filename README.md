@@ -196,7 +196,7 @@ An organized desktop solution for everyday product and inventory record manageme
    Computer Science & Engineering<br>
   Artificial Intelligence
 </p><p align="center">
-  <img src="https://img.shields.io/badge/Focus-Python%20Development-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/ROLE-Python%20Development-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Project-Inventory%20Management-087F75?style=flat-square">
 </p>
 
