@@ -14,7 +14,7 @@
 
 ---
 
-🏢 ABOUT THE PROJECT
+## 🏢 ABOUT THE PROJECT
 
 <p align="center">
   <img src="https://img.shields.io/badge/PROJECT-INVENTORY%20MANAGEMENT-087F75?style=for-the-badge&labelColor=10243A" alt="Inventory Management Project">
@@ -44,7 +44,7 @@ To simplify everyday inventory management through a user-friendly desktop applic
 
 ---
 
-🛠️ TECHNOLOGY STACK
+## 🛠️ TECHNOLOGY STACK
 
 Technology | Application
 Python | Core development
@@ -54,7 +54,7 @@ openpyxl | Excel export
 
 ---
 
-📁 Project Files
+## 📁 Project Files
 
 <table>
   <tr>
@@ -101,7 +101,7 @@ openpyxl | Excel export
 
 ---
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 <sub>QUICK START · 4 SIMPLE STEPS</sub>
 
@@ -127,7 +127,7 @@ Launch the application and start managing your products.
 
 ---
 
-🎯 Project Objective
+## 🎯 Project Objective
 
 <div align="center"><table>
 <tr>
@@ -142,7 +142,7 @@ Launch the application and start managing your products.
 
 To develop a user-friendly desktop application using Python, Tkinter, and SQLite that helps users manage product information in one place.
 
-⚡ CORE OBJECTIVES
+## ⚡ CORE OBJECTIVES
 
 <table>
 <tr>
